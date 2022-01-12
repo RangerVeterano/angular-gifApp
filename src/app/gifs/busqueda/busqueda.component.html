@@ -1,0 +1,16 @@
+<div class="col">
+    <h5>Buscar</h5>
+
+    <!--
+        Lo que hacemos es que cuando se pulse la tecla "enter" 
+        en el buscador se pase el elemento entero gracias al #txtBuscar
+        pero con la diferencia de que solo mandamos el valor por añadir el 
+        .value, luego eso es lo que mandamos a nuestro metodo para poder
+        gestionar la información.
+        
+    -->
+
+    <input type="text" class="form-control" placeholder="Buscar gifs..."
+    (keyup.enter)="buscar()"
+    #txtBuscar>
+</div>        
